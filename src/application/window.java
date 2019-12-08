@@ -113,7 +113,7 @@ public class window{
 		
 		if(player.getX()==a[0] && player.getY()==a[1])
 		{
-			ImageView win =new ImageView( new Image("file:over.png"));
+			ImageView win =new ImageView( new Image("file:image/over.png"));
 			win.setFitHeight(Height/gameMap.getRow());
 			win.setFitWidth(Width/gameMap.getCol());
 			gp.add(win,player.getY(),player.getX());
