@@ -49,7 +49,7 @@ public class Map {
 		Hmap=hmap.clone();
 		if(!search())
 		{
-			System.out.println("找不到成功路径！");
+			System.out.println("鎵句笉鍒版垚鍔熻矾寰勶紒");
 			System.exit(1);
 		}
 	}
@@ -72,8 +72,11 @@ public class Map {
 	}
 	
 	public int getlocation(int a,int b){
-		int c =map[a][b];
-		return c;
+		if(isLeagal(a,b))
+		{	int c =map[a][b];
+			return c;
+		}
+		return 1;
 	}
 	
 	public int getStartR() {
